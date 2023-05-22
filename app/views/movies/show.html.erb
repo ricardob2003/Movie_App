@@ -1,17 +1,21 @@
 <section class="movie-details">
   <div class="details">
     <div class="image">
-    <%= image_tag @movie.image_file_name %>
+      <%= image_tag @movie.image_file_name %>
     </div>
     <h1><%= @movie.title %></h1>
     <h2>
       <%= year_of(@movie) %> &bull; <%= @movie.rating %>
     </h2>
+    <div class="reviews">
+      <%= link_to pluralize(@movie.reviews.size, "review"),
+            movie_reviews_path(@movie) %>
+    </div>
     <p>
       <%= @movie.description %>
     </p>
     <table>
-          <tr>
+      <tr>
         <th>Director:</th>
         <td><%= @movie.director %></td>
       </tr>
@@ -26,7 +30,6 @@
     </table>
   </div>
 </section>
-
 <section class="admin">
   <%= link_to "Edit", edit_movie_path(@movie), class: "button" %>
   <%= link_to "Delete", @movie, class: "button",
