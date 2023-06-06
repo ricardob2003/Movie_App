@@ -22,4 +22,6 @@ test:
 
 production:
   adapter: postgresql
-  url: <%= ENV['DATABASE_URL'] %>
+  database: flix_production
+  pool: 5
+  timeout: 5000
