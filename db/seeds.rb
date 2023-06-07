@@ -165,4 +165,54 @@ Movie.create!([
     duration: "141 min",
     image_file_name: "wonder-woman.png"
   }
+  {
+    title: "Creed III",
+    description:
+    %{
+      Still dominating the boxing world, Adonis Creed is thriving in his career and family life. When Damian, a childhood friend and former boxing prodigy resurfaces after serving time in prison, he's eager to prove that he deserves his shot in the ring. The face-off between former friends is more than just a fight. To settle the score, Adonis must put his future on the line to battle Damian -- a fighter who has nothing to lose.
+    }.squish,
+    released_on: "2023-03-03",
+    rating: "PG-13",
+    total_gross: 273_900_000,
+    director: "Michael B. Jordan",
+    duration: "116 min",
+    image_file_name: "Creed3.png"
+  }
+  title: "The Flash",
+    description:
+    %{
+      Worlds collide when the Flash uses his superpowers to travel back in time to change the events of the past. However, when his attempt to save his family inadvertently alters the future, he becomes trapped in a reality in which General Zod has returned, threatening annihilation. With no other superheroes to turn to, the Flash looks to coax a very different Batman out of retirement and rescue an imprisoned Kryptonian -- albeit not the one he's looking for.  
+    }.squish,
+    released_on: "2023-06-16",
+    rating: "PG-13",
+    total_gross: 0,
+    director: "Andrés Muschietti",
+    duration: "144 min",
+    image_file_name: "flash.png"
+  }
+  title: "Puss in Boots: The Last Wish",
+  description:
+  %{
+    "Puss in Boots discovers that his passion for adventure has taken its toll when he learns that he has burnt through eight of his nine lives. Puss sets out on an epic journey to find the mythical Last Wish and restore his nine lives.
+  }.squish,
+  released_on: "2022-12-21",
+  rating: "PG",
+  total_gross: 0,
+  director: "Joel Crawford",
+  duration: "100 min",
+  image_file_name: "puss-in-boots.png"
+}
+title: "Mission Impossible - Dead Reckoning Part One",
+  description:
+  %{
+    "Ethan Hunt and the IMF team must track down a terrifying new weapon that threatens all of humanity if it falls into the wrong hands. With control of the future and the fate of the world at stake, a deadly race around the globe begins. Confronted by a mysterious, all-powerful enemy, Ethan is forced to consider that nothing can matter more than the mission -- not even the lives of those he cares about most.
+  }.squish,
+  released_on: "2023-07-12",
+  rating: "PG-13",
+  total_gross: 0,
+  director: "Christopher McQuarrie",
+  duration: " 163 min",
+  image_file_name: "Dead-Reckoning.png"
+}
+
 ])
