@@ -164,7 +164,7 @@ Movie.create!([
     director: "Patty Jenkins",
     duration: "141 min",
     image_file_name: "wonder-woman.png"
-  }
+  },
   {
     title: "Creed III",
     description:
@@ -177,7 +177,8 @@ Movie.create!([
     director: "Michael B. Jordan",
     duration: "116 min",
     image_file_name: "Creed3.png"
-  }
+  },
+  {
   title: "The Flash",
     description:
     %{
@@ -189,7 +190,8 @@ Movie.create!([
     director: "Andrés Muschietti",
     duration: "144 min",
     image_file_name: "flash.png"
-  }
+  },
+  {
   title: "Puss in Boots: The Last Wish",
   description:
   %{
@@ -197,11 +199,12 @@ Movie.create!([
   }.squish,
   released_on: "2022-12-21",
   rating: "PG",
-  total_gross: 0,
+  total_gross: 484_000_000,
   director: "Joel Crawford",
   duration: "100 min",
   image_file_name: "puss-in-boots.png"
-}
+},
+{
 title: "Mission Impossible - Dead Reckoning Part One",
   description:
   %{
@@ -214,5 +217,4 @@ title: "Mission Impossible - Dead Reckoning Part One",
   duration: " 163 min",
   image_file_name: "Dead-Reckoning.png"
 }
-
 ])
