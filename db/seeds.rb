@@ -180,7 +180,7 @@ Movie.create!([
   },
   {
   title: "The Flash",
-    description:
+  description:
     %{
       Worlds collide when the Flash uses his superpowers to travel back in time to change the events of the past. However, when his attempt to save his family inadvertently alters the future, he becomes trapped in a reality in which General Zod has returned, threatening annihilation. With no other superheroes to turn to, the Flash looks to coax a very different Batman out of retirement and rescue an imprisoned Kryptonian -- albeit not the one he's looking for.  
     }.squish,
