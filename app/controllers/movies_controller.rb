@@ -7,9 +7,9 @@ class MoviesController < ApplicationController
     case params[:filter]
     when "upcoming"
       @movies = Movie.upcoming
-    when "recent" 
-      @movies = Movie.recent 
-    else 
+    when "recent"
+      @movies = Movie.recent
+    else
       @movies = Movie.released
     end
   end
@@ -33,7 +33,7 @@ class MoviesController < ApplicationController
     end
   end
 
-  def new 
+  def new
     @movie = Movie.new
   end
 
@@ -41,25 +41,25 @@ class MoviesController < ApplicationController
     @movie = Movie.new(movie_params)
     if @movie.save
       redirect_to @movie, notice: "Movie Succesfully Created!"
-    else 
+    else
       render :new, status: :unprocessable_entity
     end
   end
 
-    #Ask how this redirect works with movies_url 
-  def destroy 
+    #Ask how this redirect works with movies_url
+  def destroy
     @movie.destroy
     redirect_to movies_url, status: :see_other,
       alert: "Movie Succesfully Deleted!"
   end
 
-private 
-    def movie_params 
+private
+    def movie_params
       params.require(:movie).
       permit(:title, :description, :rating, :released_on, :total_gross,
-      :director, :duration, :image_file_name, genre_ids: [])
+      :director, :duration, :main_image, genre_ids: [])
     end
-    def set_movie 
+    def set_movie
       @movie = Movie.find_by!(slug: params[:id])
     end
 end
