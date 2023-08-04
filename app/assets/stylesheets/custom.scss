@@ -375,13 +375,22 @@ ul.reviews {
 
 // Footer
 
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.content {
+  flex: 1;
+}
+
 footer {
   background: $black;
   color: $light-gray;
   text-align: center;
-  margin-top: 3rem;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding: 2rem 0;
 }
 
 // Admin Section
